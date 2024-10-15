@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(177, 177, 255);
+    display: flex;
+    justify-content: center;
+}
+.firstClass{
+    background-color: white;
+    width: 350px;
+    height: 530px;
+    border-radius: 10px;
+    margin-top: 100px;
+    text-align: center;
+}
+img{
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+#titleDiv{
+    color: rgb(6, 6, 89);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 20px;
+}
+#disc{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 10px;
+    color: gray;
+}
+.discMusic{
+    height: 100px;
+    background-color: rgb(217, 217, 247);
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 10px;
+    gap: 30px;
+    
+
+}
+.music-note{
+    border-radius: 100px;
+    background-color: rgb(177, 177, 255);
+    width: 40px;
+    height: 40px;
+    
+}
+.material-icons {
+    font-size: 15px;
+    margin-top: 7px;
+    color: rgb(121, 121, 250);
+}
+.text{
+  
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+
+    
+}
+.sub-text{
+    color: grey;
+}
+.payment-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(113, 113, 255);
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    border-style: none;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 4px 4px 5px rgb(81, 81, 190);
+}
+.cancel-button{
+    border: none;
+    background-color: white;
+    font-size: 10px;
+    color: rgb(6, 6, 89);
+    font-weight: 600;
+}
