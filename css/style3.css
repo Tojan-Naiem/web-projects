@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(239, 244, 247);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 90px;
+    height: 90px;
+}
+.wrapper{
+    background-color: white;
+    width: 400px;
+}
+.wrapper h2{
+    font-weight: 500;
+    font-family: 'Roboto';
+    margin: 20px;
+}
+.line {
+    height: 0.5px; 
+    background-color: rgb(225, 225, 225); 
+    margin: 20px 5px;
+}
+.wrapper .form{
+    margin: 20px;
+}
+.wrapper .form .input-box label{
+    font-family: 'Roboto';
+    font-size: 12px;
+    color: rgb(161, 166, 171);
+}
+.wrapper .form .input-box{
+    width: 100%;
+}
+.wrapper .form .input-box input{
+    width: 100%;
+    border: none;
+    background-color: rgb(239, 244, 247);
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.wrapper .form .operation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.remember-forgot input{
+  
+    margin-right: 5px;
+    background-color: red;
+
+}
+.remember-forgot {
+    font-family: 'Roboto';
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.operation .btn{
+width: 120px;
+background-color: rgb(0, 158, 97);
+border: none;
+height: 40px;
+border-radius: 3px;
+color: white;
+
+}
+.forgot-password{
+    border: none;
+    background-color: transparent;
+    color: grey;
+    font-family: 'Roboto';
+    margin-bottom: 15px;
+
+}
+.quastion{
+    margin-top: 15px;
+    font-family: 'Roboto';
+    font-size: 13px;
+    color: grey;
+
+}
+.quastion a{
+    color: rgb(0, 158, 97);
+    font-weight: 500;
+
+}
