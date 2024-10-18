@@ -14,7 +14,6 @@ body{
     width: 400px;
     background-color: rgb(0, 0, 0,0.5);
     backdrop-filter: blur(5px); /* مقدار الضبابية */
-
     padding: 15px;
     border-radius: 15px;
     border: 2px solid black;
