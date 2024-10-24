@@ -1,0 +1,47 @@
+body{
+    background-color: azure;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color:green;
+    padding: 20px;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header .container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+}
+.header .container p{
+    color: white;
+    
+}
+.header .container .buttons{
+    display: flex;
+    flex-direction: row;
+}
+.header .container .buttons p{
+    margin-left: 20px;
+
+}
+@media (max-width:992px){
+    .header .container .buttons p{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    
+}
+@media (min-width:500){
+    .header .container .buttons p{
+        display: none;
+    }
+}
