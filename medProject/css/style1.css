@@ -1,0 +1,34 @@
+:root{
+    --main-color1:#ff9a9e;
+    --main-color2:#F6416C;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    width: 1000%;
+    background:linear-gradient(135deg , var(--main-color1) 10% , var(--main-color2) 100%) ;
+}
+body::before,
+body::after{
+    content: '';
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+body::before{
+    clip-path: circle(30% at left 20%);
+    background:linear-gradient(135deg , var(--main-color2) 10% , var(--main-color1) 100%) ;
+}
+body::after{
+    clip-path: circle(25% at right  80%);
+    background:linear-gradient(135deg , var(--main-color2) 10% , var(--main-color1) 100%) ;
+}
