@@ -48,6 +48,7 @@ header{
     box-shadow: 0 20px 50px rgb(0, 0, 0,0.15);
     border-top: 1px solid rgb(255, 255, 255,0.5);
     border-left: 1px solid rgb(255, 255, 255,0.5);
+    z-index: 15;
 
 }
 header .navbar{
@@ -95,11 +96,54 @@ header .navbar .buttons input{
     padding: 10px;
     background:linear-gradient(135deg , var(--main-color2) 10% , var(--main-color1) 100%) ;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     color: white;
+    transition: all 0.3 ease;
+    font-size: 17px;
 
 }
+header .buttons input:hover{
+    transform: scale(0.97);
+}
 
+/* Text Content */
+header .text-content{
+    width: 40%;
+    margin-left: 90px;
+    margin-top: 90px;
+  }
+header .text-content p{
+    margin-top: 10px;
+ }
+ header .play-button{
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+
+  
+ }
+ header .play-video::before{
+    content: '';
+    height: 2px;
+    width: 50px;
+    background-color: black;
+   position: absolute;
+   left: -50px;
+   bottom: 17px;
+   margin-left: -5px;
+   transform: translateY(-50%);
+  
+ }
+ header .play-button i{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 7px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+
+  
+ }
 @media (max-width:767px){
     header .logo a{
         font-size: 12px;
@@ -112,7 +156,15 @@ header .navbar .buttons input{
         margin-left: 0px;
         margin-right: 0;
         padding: 5px;
+        border-radius: 7px;
 
         
     }
+    header .text-content p{
+        width: 100%;
+        font-size: 12px;
+     }
+     header .text-content h2{
+        font-size: 19px;
+     }
 }
