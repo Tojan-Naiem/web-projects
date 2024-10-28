@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 :root{
     --main-color1:#ff9a9e;
     --main-color2:#F6416C;
@@ -10,19 +12,23 @@
     font-family: 'Poppins',sans-serif;
 }
 body{
+    display: flex;
+    align-items: center;
     height: 100vh;
-    width: 1000%;
+    width: 100%;
     background:linear-gradient(135deg , var(--main-color1) 10% , var(--main-color2) 100%) ;
+
 }
 body::before,
 body::after{
     content: '';
-    margin: 0;
-    padding: 0;
     position: absolute;
+    left: 0;
+    top: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.4;
+
 }
 body::before{
     clip-path: circle(30% at left 20%);
@@ -31,4 +37,82 @@ body::before{
 body::after{
     clip-path: circle(25% at right  80%);
     background:linear-gradient(135deg , var(--main-color2) 10% , var(--main-color1) 100%) ;
+}
+header{
+    width: 90%;
+    height: 85vh;
+    background: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(5px);
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgb(0, 0, 0,0.15);
+    border-top: 1px solid rgb(255, 255, 255,0.5);
+    border-left: 1px solid rgb(255, 255, 255,0.5);
+
+}
+header .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+header .logo a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+header .navbar .menu{
+    display: flex;
+    list-style-type: none;
+
+}
+header .menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+
+}
+header .menu li{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+header .menu a:hover{
+    color: white;
+    transition-duration: 1s;
+
+}
+
+header .navbar .buttons input{
+    margin-left: 7px;
+    margin-right: 7px;
+    padding: 10px;
+    background:linear-gradient(135deg , var(--main-color2) 10% , var(--main-color1) 100%) ;
+    border: none;
+    border-radius: 10px;
+    color: white;
+
+}
+
+@media (max-width:767px){
+    header .logo a{
+        font-size: 12px;
+    }
+    header .menu a{
+        font-size: 12px;
+    }
+    header .navbar .buttons input{
+        font-size: 12px;
+        margin-left: 0px;
+        margin-right: 0;
+        padding: 5px;
+
+        
+    }
 }
