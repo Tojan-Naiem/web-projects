@@ -50,10 +50,10 @@ header .menu{
     align-items: center;
     gap: 20px;
 }
-header .menu li{
+header  li{
     list-style-type: none;
 }
-header .menu .language-items a{
+header  .language-items a{
     display: flex;
     align-items: center;
     gap: 5px;
@@ -63,10 +63,10 @@ header .menu a{
     color: white;
     font-weight: 600;
 }
-header .menu a:hover{
+header  a:hover{
     color: var(--main-color);
 }
-header .menu .join-us a:hover{
+header  .join-us a:hover{
     color: white;
 }
 header .menu .join-us{
@@ -165,7 +165,43 @@ header #menu-btn{
     color: white;
     display: none;
 }
+header .menu2{
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 60px;
+    padding-right: 50px;
+    gap: 20px;
+    transition: left 0.2s ease;
+    color: #000;
+    z-index: 1;
+display: none;
+}
+header .menu2 .language-items{
+    margin-bottom: 0;
+    height: 30px;
+}
+header .menu2 a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+header .menu a{
+    color: black;
+    margin-bottom: 20px;
+}
 @media  screen and (max-width:800px){
+    header .menu{
+        display: none;
+    }
 
     header .hero-section {
         background: none;
@@ -208,40 +244,13 @@ header #menu-btn{
         top: 0;
         backdrop-filter: blur(5px);
       }
-    header .menu{
-        height: 100vh;
-        max-width: 400px;
-        width: 100%;
-        background: #fff;
-        position: fixed;
-        top: 0;
-        left: -200px;
-        flex-direction: column;
-        align-items: end;
-        padding-top: 60px;
-        padding-right: 50px;
-        gap: 20px;
-        transition: left 0.2s ease;
-        color: #000;
-        z-index: 1;
-display: none;
-    }
-    header .language-items{
-        margin-bottom: 0;
-        height: 30px;
-    }
-    
-
-    header .menu a{
-        color: black;
-        margin-bottom: 20px;
-    }
+   
     header #menu-btn{
         color: white;
         display: block;
     }
 }
-header #menu-btn:hover ~ .menu {
+header #menu-btn:hover ~ .menu2 {
     display: flex;
 }
 
