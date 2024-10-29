@@ -1,0 +1,247 @@
+:root{
+    --main-color:#1dbf73;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #1B1B1D;
+
+    
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: #1B1B1D;
+
+    font-family: 'Fira Sans', sans-serif;
+
+
+}
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+    align-items: center;
+}
+header .logo{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+}
+header .logo::after{
+    content: "";
+    width: 7px; 
+    height: 7px;
+    background-color: var(--main-color);
+    clip-path: circle(50%);
+    position: absolute;
+    top: 70%;
+    left: 100%; 
+    transform: translate(-20%, -50%); 
+}
+header .menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .menu li{
+    list-style-type: none;
+}
+header .menu .language-items a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+header .menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+header .menu a:hover{
+    color: var(--main-color);
+}
+header .menu .join-us a:hover{
+    color: white;
+}
+header .menu .join-us{
+    padding: 15px;
+    border: 1px solid white ;
+    border-radius: 7px;
+    height: 20px;
+    width: 70px;
+    text-align: center;
+    transition: 1s;
+    color: white;
+}
+header .menu .join-us:hover{
+    background-color: var(--main-color);
+    border: none;
+  
+}
+/* Hero Section */
+header .hero-section{
+    height: 100vh;
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    padding: 0 20px;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+}
+.hero-section h1{
+    color: white;
+    position: relative;
+    top: -70px;
+    font-size: 50px;
+    max-width: 630px;
+
+}
+.hero-section .search-form{
+    position: relative;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+
+}
+.search-form input{
+    min-width: 500px;
+    height: 50px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border: none;
+    padding-left: 10px;
+    font-weight: 600;
+
+}
+.search-form button{
+    background-color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border: none;
+    color: white;
+}
+.popular{
+    display: flex;
+    gap: 15px;
+    color: white;
+    font-weight: 600;
+
+}
+.popular ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 10px;
+    
+}
+.popular a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+.popular a:hover{
+    background-color: white;
+    color: black;
+}
+header #menu-btn{
+    color: white;
+    display: none;
+}
+@media  screen and (max-width:800px){
+
+    header .hero-section {
+        background: none;
+        align-items: center;
+        justify-content: center;
+    }
+    header .menu a{
+        margin-left: 5px ;
+   
+    }
+    .hero-section h1{
+        font-size: 30px;
+        margin: 5px;
+    }
+    .hero-section .search-form{
+       flex-direction: column; 
+       gap: 5px;
+       margin-left: 20px;
+       margin-right: 20px;
+          
+    }
+    .hero-section .search-form input{
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    .hero-section .search-form button{
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        min-width: 510px;
+    }
+    .popular{
+        display: none;
+    }
+    header.show-mobile-menu::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        backdrop-filter: blur(5px);
+      }
+    header .menu{
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: -200px;
+        flex-direction: column;
+        align-items: end;
+        padding-top: 60px;
+        padding-right: 50px;
+        gap: 20px;
+        transition: left 0.2s ease;
+        color: #000;
+        z-index: 1;
+display: none;
+    }
+    header .language-items{
+        margin-bottom: 0;
+        height: 30px;
+    }
+    
+
+    header .menu a{
+        color: black;
+        margin-bottom: 20px;
+    }
+    header #menu-btn{
+        color: white;
+        display: block;
+    }
+}
+header #menu-btn:hover ~ .menu {
+    display: flex;
+}
+
