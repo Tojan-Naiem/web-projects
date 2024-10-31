@@ -1,0 +1,52 @@
+:root{
+    --main-color:#fc036b;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+header{
+    height: 90vh;
+    width: 100%;
+    background-image: url('../img/header-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+.nvbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px 30px 30px;
+    align-items: center;
+}
+.nvbar h2{
+    color: white;
+}
+.nvbar .menu{
+    display: flex;
+    align-items: center;
+}
+.nvbar .menu li{
+    margin-left: 50px;
+    list-style-type: none;
+}
+.nvbar .menu a{
+    text-decoration: none;
+    color: white;
+}
+.nvbar .menu .contact{
+    background-color: var(--main-color);
+    border-radius: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+    text-align: center;
+}
+.nvbar .menu a:hover{
+color: var(--main-color);
+}
