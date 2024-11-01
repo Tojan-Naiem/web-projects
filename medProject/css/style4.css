@@ -161,8 +161,53 @@ color: var(--main-color);
     background-color: white;
     color: var(--main-color);
 }
-
-
-
 /* End upcoming events section */
 
+/* Start Explore Section */
+.explore-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/bg2.png');
+    background-position: center;
+    background-size: cover;
+}
+.explore-section .title{
+    position: relative;
+    top: 200px;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.explore-section .title h2{
+    color: white;
+    font-size: 50px;
+}
+.explore-section .title hr{
+    border: 2px solid var(--main-color);
+    width: 100px;
+    margin-top: 7px;
+}
+.explore-section .title p{
+    margin-top: 35px;
+    color: white;
+    font-size: 13px;
+}
+.explore-section .title button{
+    background-color: var(--main-color);
+    width: 100px;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+}
+.explore-section .title button:hover{
+    background-color: white;
+    color: var(--main-color);
+}
+
+
+/* End Explore Section */
