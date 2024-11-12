@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+body{
+    background-color: #001;
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    padding: 20px;
+
+}
+.menu .protofile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.protofile .img-box{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    padding: 3px;
+
+}
+.protofile .img-box img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+
+}
