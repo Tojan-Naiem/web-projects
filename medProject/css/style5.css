@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     color: white;
+    font-family: sans-serif;
 }
 body{
     background-color: #001;
@@ -10,25 +11,64 @@ body{
 }
 .menu{
     padding: 20px;
+    background-color: #123;
+    width: 260px;
+    height: 100vh;
+
 
 }
 .menu .protofile{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .protofile .img-box{
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: white;
-    padding: 3px;
+    overflow: hidden;
+    border: 3px solid white;
+    margin-bottom: 10px;
+
 
 }
 .protofile .img-box img{
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 100%;
+}
+.menu ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
 
+.menu li a{
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 0.5s;
+    
+}
+.menu li a:hover,.active{
+    background-color: #ffffff55;
+}
+.menu .log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+.menu .log-out a{
+    background-color: red;
+
+
+}
+.menu li i{
+    font-size: 30px;
 
 }
