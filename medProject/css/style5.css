@@ -1,3 +1,9 @@
+:root{
+    --main-color:#0481ff;
+}
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -8,19 +14,25 @@ body{
     background-color: #001;
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 .menu{
     padding: 20px;
     background-color: #123;
-    width: 260px;
+    width: 60px;
     height: 100vh;
+    overflow: hidden;
+    transition: 0.5s;
 
 
 }
+.menu:hover{
+    width: 260px;
+}
 .menu .protofile{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    gap: 30px;
 }
 .protofile .img-box{
     border-radius: 50%;
@@ -30,6 +42,7 @@ body{
     overflow: hidden;
     border: 3px solid white;
     margin-bottom: 10px;
+    flex-shrink: 0;
 
 
 }
@@ -54,7 +67,7 @@ body{
     transition: 0.5s;
     
 }
-.menu li a:hover,.active{
+.menu li a:hover,.active ,.contant .data-info .card:hover,.contant table th:hover{
     background-color: #ffffff55;
 }
 .menu .log-out{
@@ -70,5 +83,70 @@ body{
 }
 .menu li i{
     font-size: 30px;
+
+}
+.contant {
+    width: 100%;
+    padding: 10px;
+}
+.contant .title-info{
+    background-color: var(--main-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.contant .data-info{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    
+}
+.contant .data-info .card{
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.contant .data-info .card i{
+    font-size: 40px;
+}
+.contant .data-info .card .data{
+    font-size: 30px;
+    text-align: center;
+}
+.contant table{
+    width: 100%;
+    border-spacing: 10px;
+}
+.contant table th{
+    background-color: #123;
+    padding: 10px;
+    border-radius: 8px;
+}
+.contant table thead th{
+    background-color: var(--main-color);
+
+}
+.contant table .price{
+    background-color: green;
+    padding: 7px 7px;
+    border-radius: 8px;
+}
+.contant table .count{
+    background-color: gold;
+    padding: 7px 7px;
+    border-radius: 8px;
+    color: black;
 
 }
